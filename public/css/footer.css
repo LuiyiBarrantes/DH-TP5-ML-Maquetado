@@ -1,0 +1,18 @@
+.footer{
+    color: var(--colorGrisOscuro)
+}
+.footer h4,p{
+margin: 0;
+}
+.footer p{
+    font-size: 12px;
+    }
+.footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--colorCeleste);
+}
+.footer__section--pago, .footer__section--envio, .footer__section--seguridad{
+margin: 60px 25px;
+text-align: center;
+}

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: var(--tipografiaGeneral);
+    padding: 0;
+
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
