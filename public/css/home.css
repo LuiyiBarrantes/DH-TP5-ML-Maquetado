@@ -1,4 +1,57 @@
 .home{
     font-size: 12px;         
 }
+.home__main{
+    background-color: var(--colorGrisClaro) ;
+    color: var(--colorGrisOscuro);
+}
+.home__main__section{
+width: 90%;
+margin: 0 auto;
+}
+.home__main__section__article{
+    margin: 10px 0;
+}
+.home__main__section__article p{
+    
+    color: var(--colorVerde);
+}
+.home__main__section__article i{
+    color: var(--colorVerde);
+    border: 1px solid var(--colorVerde);
+    padding: 7px;
+    border-radius: 50%;
+}
+.home__main__section__article h5{
+    margin: 15px 0 0 0;
+    font-weight: 300;
+    display: none;
+}
+.home__main__section__article h3{
+    margin: 0;
+}
+.home__main__section__article img{
+    width: 100%;
+}
+.home__main__section__article div{
+    /* defino -1px porque sino me queda muy ancho el borde superior */
+    border-top: -1px solid var(--colorGrisClaro);
+    padding: 15px;
+    background-color: white;
+    margin: 0;
+}
+/* tablet */
+@media (min-width:361px) {
+    .home__main__section__article h5{
+        display: block;
+    }
+    .home__main__section__article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+/* desktop */
+@media (min-width:769px) {
+    .home__main__section__article{
 
+    }
+}
