@@ -68,6 +68,9 @@
 .header__nav{
     display: block;
 }
+.header__burger-menu{
+    display: none;
+}
 }
 /* desktop */
 @media (min-width:769px){
