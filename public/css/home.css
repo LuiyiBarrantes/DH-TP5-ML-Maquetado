@@ -1,6 +1,9 @@
 .home{
     font-size: 12px;         
 }
+.home__main__section--baner img{
+    width: 100%;
+}
 .home__main{
     background-color: var(--colorGrisClaro) ;
     color: var(--colorGrisOscuro);
