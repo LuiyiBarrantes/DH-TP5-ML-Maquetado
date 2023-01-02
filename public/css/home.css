@@ -48,11 +48,9 @@ margin: 0 auto;
 
 .home__main__section__article h3{
     margin: 0;
-    /* display: inline-block; */
     width: 30%;
 }
 .home__main__section__article p{
-    /* display: inline-block; */
     color: var(--colorVerde);
     width: 70%;
 }
