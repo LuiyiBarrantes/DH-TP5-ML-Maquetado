@@ -8,7 +8,7 @@ app.use(express.static(path.resolve(__dirname, "public")))
 
 
 
-app.listen(port,()=> `Servidor corriendo en https://localhost:${port}`)
+app.listen(port,()=> console.log(`Servidor corriendo en https://localhost:${port}`))
 
 app.get("/",(req,res)=>{
     res.sendFile(path.resolve(__dirname, "views", "home.html"))
