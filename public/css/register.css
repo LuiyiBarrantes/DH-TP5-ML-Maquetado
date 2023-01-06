@@ -1,0 +1,9 @@
+.register{
+    font-size: 12px;
+}
+.register__main{
+    background-color: var(--colorGrisClaro);
+    text-transform: capitalize;
+    padding: 6%;
+    
+}

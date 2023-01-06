@@ -20,13 +20,17 @@
     color: var(--colorGrisOscuro);
     position: relative;
     height: 20px;
+
 }
-.header__search-bar input{
-width: 100%;
-border: none;
-border-radius: 3px;
-padding: 10px;
+
+.header__search-bar input {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 9px;
+    margin: 0;
 }
+
 .header__search-bar--lupa {
     background-color: #ffffff;
     border: solid 0px #fff;
@@ -37,8 +41,7 @@ padding: 10px;
     color: var(--colorGrisOscuro);
 }
 
-.header__search-bar--lupa i {
-}
+.header__search-bar--lupa i {}
 
 .header__cuotas {
     text-align: center;
@@ -56,7 +59,8 @@ padding: 10px;
     display: block;
     font-size: 15px;
 }
-.header__burger-menu i{
+
+.header__burger-menu i {
     font-size: 24px;
 }
 
@@ -73,7 +77,8 @@ padding: 10px;
     .header__search-bar {
         width: 25%;
     }
-    .header__search-bar input{
+
+    .header__search-bar input {
         padding: 0;
     }
 
@@ -108,14 +113,17 @@ padding: 10px;
         justify-content: space-between;
         width: 37%;
     }
+
     .header__nav--navbar a,
     .header__nav--login-bar a {
         color: black;
         text-decoration: none;
     }
+
     .header__burger-menu {
         display: none;
     }
 }
+
 /* desktop */
 @media (min-width:769px) {}
