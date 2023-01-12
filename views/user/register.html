@@ -12,11 +12,10 @@
 <body class="register">
     <header class="header">
         <!-- Logo -->
-        <a class="header__logo"href="/"><img  src="/images/logo-mercado-liebre.svg" alt=""></a>
+        <a class="header__logo" href="/"><img src="/images/logo-mercado-liebre.svg" alt=""></a>
         <!-- Buscador -->
         <form class="header__search-bar" action="" method="post">
-            <div > <input type="search" name="buscador" id="buscador"
-                    placeholder="Buscar productos, marcas">
+            <div> <input type="search" name="buscador" id="buscador" placeholder="Buscar productos, marcas">
                 <button class="header__search-bar--lupa"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </form>
@@ -33,7 +32,7 @@
             </ul>
             <ul class="header__nav--login-bar">
                 <li><a href="">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                <li><a href="">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
                 <li><a href="">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </nav>
@@ -43,46 +42,89 @@
     </header>
     <main class="register__main">
         <!-- formulario de registro -->
-
         <section class="register__main__section">
+            <!-- TITULO -->
             <h1> Registro de Usuario </h1>
             <article class="register__main__section__article">
                 <form class="register__form" action="" method="post">
+                    <!-- SUBTITULO DATOS -->
                     <h3>tus datos</h3>
+                    <!-- NOMBRE Y APELLIDO -->
                     <div>
-                        <input type="text" name="name" id="name" placeholder="Nombre y apellido">
+                        <input type="text" name="name" id="name" placeholder="Nombre y apellido" required minlength="4">
                     </div>
+                    <!-- NOMBRE DE USUARIO -->
                     <div>
-                        <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+                        <input type="text" name="username" id="username" placeholder="Nombre de usuario" required
+                            minlength="8">
                     </div>
+                    <!-- EMAIL -->
                     <div>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
                     </div>
+                    <!-- FECHA DE NACIMIENTO -->
                     <h3>
                         fecha de nacimiento
                     </h3>
                     <div>
-                        <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento">
+                        <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" required>
 
                     </div>
+                    <!-- DOMICILIO -->
                     <div>
-                        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+                        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
                     </div>
-
+                    <!-- PERFIL DE USUARIO INPUT RADIO -->
                     <div class="register__form--radio">
                         <h3>
                             Perfil de usuario
                         </h3>
-                        <input type="radio" name="perfilUsuario" id="perfilUsuario">
-                        <label for="perfilUsuario">comprador</label>
-                        <input type="radio" name="perfilUsuario" id="perfilUsuario">
-                        <label for="perfilUsuario">vendedor</label>
+                        <input type="radio" name="perfilUsuario" id="comprador" checked>
+                        <label for="comprador">comprador</label>
+                        <input type="radio" name="perfilUsuario" id="vendedor">
+                        <label for="vendedor">vendedor</label>
+                    </div>
+                    <!-- INTERESES INPUT CHECKBOX -->
+                    <div class="register__form--chechkbox">
+                        <h3>
+                            intereses
+                        </h3>
+                        <input type="checkbox" name="intereses" id="electro">
+                        <label for="electro">electro</label>
+                        <input type="checkbox" name="intereses" id="moda">
+                        <label for="moda">moda</label>
+                        <input type="checkbox" name="intereses" id="hogar">
+                        <label for="hogar">hogar</label>
+                        <input type="checkbox" name="intereses" id="jugueteria">
+                        <label for="jugueteria">juguetería</label>
+                        <input type="checkbox" name="intereses" id="vida sana">
+                        <label for="vida sana">vida sana</label>
+                    </div>
+                    <!-- FOTO DE USUARIO -->
+                    <div>
+                        <h3 for="userphoto">foto de usuario</h3>
+                        <input type="file" name="userphoto" id="userphoto" accept=".jpg">
+                    </div>
+                    <!-- CONTRASEÑA -->
+                    <div class="register__form--password">
+                        <h3>
+                            contraseña
+                        </h3>
+                        <input type="password" name="password" id="password" placeholder="Ingrese contraseña" required
+                            minlength="8">
+                        <input type="password" name="password2" id="password2" placeholder="Confirmar contraseña"
+                            required minlength="8">
+                    </div>
+                    <!-- CAJA DE BOTONES -->
+                    <div class="register__form--buttons">
+                        <!-- BOTON ENVIAR -->
+                        <button class="btn--enviar" type="submit"><a href="/">Enviar</a></button>
+                        <!-- BOTON CANCELAR -->
+                        <button class="btn--cancel" type="reset">Borrar</button>
                     </div>
                 </form>
             </article>
-
         </section>
-
     </main>
     <footer class="footer">
         <section class="footer__section--pago">

@@ -1,9 +1,34 @@
 .register{
     font-size: 12px;
+    
 }
 .register__main{
     background-color: var(--colorGrisClaro);
     text-transform: capitalize;
     padding: 6%;
-    
+    margin-top: 210px;
+}
+.register__main__section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* tablet */
+@media (min-width:361px){
+.register__main{
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register__main__section{
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+}
+/* desktop */
+@media (min-width:769px){
+
 }

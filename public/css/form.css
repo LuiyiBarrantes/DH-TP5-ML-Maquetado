@@ -5,4 +5,63 @@ form input{
     border-radius: 5px;
     margin: 5px 0;
 }
-.register__form--radio input{width: 30px;}
+form div{
+    width: 100%;
+}
+.register__form--radio input{
+    width: 30px;}
+    .register__form{
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    form h3{
+        width: 100%;
+    }
+    .register__form--radio{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .register__form--chechkbox{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
+    }
+    .register__form--chechkbox h3{
+        width: 100%;
+    }
+    .register__form--chechkbox input{
+        width: 15%;
+    }
+    .register__form--chechkbox label{
+        width:70%
+    }
+    .register__form--password{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .register__form--buttons{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .btn--enviar,.btn--cancel{
+        background-color: var(--colorCeleste);
+        color: white;
+        padding: 10px;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+    }
+    .btn--enviar a{
+        text-decoration: none;
+        color: white;
+    
+    }

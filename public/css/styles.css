@@ -1,8 +1,9 @@
 @import "./footer.css";
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./form.css";
 @import "./home.css";
 @import "./header.css";
+@import "./login.css";
 @import "./generals.css";
-@import "./variables.css";
 @import "./register.css";
-@import "./form.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "./variables.css";

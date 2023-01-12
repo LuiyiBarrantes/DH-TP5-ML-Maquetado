@@ -6,6 +6,11 @@
     justify-content: space-between;
     align-items: center;
     align-content: space-between;
+    position: fixed;
+    top: 0;
+    height: 210px;
+    width: 100%;
+    z-index: 10;
 }
 
 .header__logo {
@@ -63,13 +68,22 @@
 .header__burger-menu i {
     font-size: 24px;
 }
+.header__burger-menu{
+    display: block;
+}
 
 .header__nav {
     display: none;
 }
+.header__burger-menu:active::after{
+    display: block;
+}
 
 /* tablet */
 @media (min-width:361px) {
+    .header{
+        height: 150px;
+    }
     .header__logo {
         width: 30%;
     }
@@ -111,7 +125,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        width: 37%;
+        width: 41%;
     }
 
     .header__nav--navbar a,
@@ -126,4 +140,9 @@
 }
 
 /* desktop */
-@media (min-width:769px) {}
+@media (min-width:769px) {
+    .header{
+        height: auto;
+    }
+    
+}
