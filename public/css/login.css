@@ -1,3 +1,4 @@
+/************************ MOBILE FIRST *************************/
 .login{
     font-size: 12px;
     
@@ -23,7 +24,7 @@
     flex-wrap: wrap;
     gap: 16px;
 }
-/* tablet */
+/************************ TABLET *************************/
 @media (min-width:361px){
     .login__main{
         margin-top: 140px;
@@ -37,7 +38,7 @@
         align-items: center;
     }
     }
-    /* desktop */
-    @media (min-width:769px){
+/************************ DESKTOP *************************/
+@media (min-width:769px){
     
     }

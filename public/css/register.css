@@ -1,3 +1,4 @@
+/************************ MOBILE FIRST *************************/
 .register{
     font-size: 12px;
     
@@ -14,7 +15,7 @@
     gap: 20px;
 }
 
-/* tablet */
+/************************ TABLET *************************/
 @media (min-width:361px){
 .register__main{
     margin-top: 140px;
@@ -28,7 +29,7 @@
     align-items: center;
 }
 }
-/* desktop */
+/************************ DESKTOP *************************/
 @media (min-width:769px){
 
 }

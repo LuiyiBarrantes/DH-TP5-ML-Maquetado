@@ -1,3 +1,4 @@
+/************************ MOBILE FIRST *************************/
 .home {
     font-size: 12px;
 }
@@ -51,8 +52,6 @@
     position: absolute;
     right: 20px;
     top: -15px;
-
-
 }
 
 .home__main__section__article h3 {
@@ -71,7 +70,7 @@
     display: none;
 }
 
-/* tablet */
+/************************ TABLET *************************/
 @media (min-width:361px) {
     .home__main {
         margin-top: 150px;
@@ -123,7 +122,7 @@
     }
 }
 
-/* desktop */
+/************************ DESKTOP *************************/
 @media (min-width:769px) {
     .home__main {
         margin-top: 181px;
