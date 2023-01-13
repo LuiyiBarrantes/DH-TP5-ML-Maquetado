@@ -1,26 +1,32 @@
-.home{
-    font-size: 12px;         
+.home {
+    font-size: 12px;
 }
-.home__main__section--baner img{
+
+.home__main__section--baner img {
     width: 100%;
 }
-.home__main{
+
+.home__main {
     margin-top: 210px;
     background-color: var(--colorGrisClaro);
     color: var(--colorGrisOscuro);
 }
-.home__main__section{
-width: 90%;
-margin: 0 auto;
+
+.home__main__section {
+    width: 90%;
+    margin: 0 auto;
 }
-.home__main__section__article{
+
+.home__main__section__article {
     margin: 10px 0;
 }
-.home__main__section__article img{
+
+.home__main__section__article img {
     width: 100%;
 }
-.home__main__section__article div{
-    
+
+.home__main__section__article div {
+
     border-top: 1px solid var(--colorGrisClaro);
     padding: 15px 10px;
     background-color: white;
@@ -29,9 +35,10 @@ margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    
+
 }
-.home__main__section__article i{
+
+.home__main__section__article i {
     display: block;
     font-size: 16px;
     color: var(--colorVerde);
@@ -44,21 +51,21 @@ margin: 0 auto;
     position: absolute;
     right: 20px;
     top: -15px;
-    
-    
+
+
 }
 
-.home__main__section__article h3{
+.home__main__section__article h3 {
     margin: 0;
-    /* width: 30%; */
 }
-.home__main__section__article p{
+
+.home__main__section__article p {
     color: var(--colorVerde);
     width: 44%;
-    
     text-transform: lowercase;
 }
-.home__main__section__article h5{
+
+.home__main__section__article h5 {
     margin: 15px 0 0 0;
     font-weight: 300;
     display: none;
@@ -66,42 +73,63 @@ margin: 0 auto;
 
 /* tablet */
 @media (min-width:361px) {
-    .home__main{
+    .home__main {
         margin-top: 150px;
     }
-    .home__main__section{
+
+    .home__main__section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start;
     }
-    .home__main__section h2{
+
+    .home__main__section h2 {
         width: 100%;
     }
-    .home__main__section h3{
-        /* width: 75px; */
+
+    .home__main__section h3 {
+        gap: 30px;
     }
-    .home__main__section__article h5{
-        display: inline-block;
+
+    .home__main__section__article h5 {
+        transition: all 0.5s;
     }
-    .home__main__section__article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    .home__main__section__article {
         width: 48%;
         background-color: white;
+        transition: all 0.5s;
     }
-    .home__main__section__article div{
-        /* justify-content: space-between; */
+
+    .home__main__section__article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home__main__section__article:hover h5 {
+        display: inline-block;
+    }
+
+    .home__main__section__article i {
+        transition: all 0.5s;
+    }
+
+    .home__main__section__article:hover i {
+        transform: rotate(-90deg);
+    }
+
+    .home__main__section__article div {
+        column-gap: 30px;
     }
 }
+
 /* desktop */
 @media (min-width:769px) {
-    .home__main{
+    .home__main {
         margin-top: 181px;
     }
-    .home__main__section__article{
+
+    .home__main__section__article {
         width: 24%;
-        
+
     }
-    .home__main__section div{
-        justify-content: space-between;
-    }
-}

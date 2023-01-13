@@ -142,7 +142,7 @@
 /* desktop */
 @media (min-width:769px) {
     .header{
-        height: auto;
+        height: 181px;
     }
     
 }
