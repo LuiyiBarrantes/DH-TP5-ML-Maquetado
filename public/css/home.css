@@ -113,7 +113,7 @@
         transition: all 0.5s;
     }
 
-    .home__main__section__article:hover i {
+    .home__main__section__article i:hover {
         transform: rotate(-90deg);
     }
 
