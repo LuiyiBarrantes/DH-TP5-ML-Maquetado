@@ -92,17 +92,20 @@
     }
 
     .home__main__section__article h5 {
-        transition: all 0.5s;
+        transition: all 0.75s;
     }
 
     .home__main__section__article {
         width: 48%;
         background-color: white;
-        transition: all 0.5s;
+        margin-bottom: 35px;
+        transition: box-shadow 0.75s, margin-bottom 0s;
     }
 
     .home__main__section__article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-bottom: 0;
+        
     }
 
     .home__main__section__article:hover h5 {
