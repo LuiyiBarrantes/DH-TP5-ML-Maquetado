@@ -4,11 +4,14 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
 const controller = {
 	// Root - Show all products
+	
 	index: (req, res) => {
+		const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 		return res.render('products', {
 			products,
 			toThousand
@@ -17,11 +20,14 @@ const controller = {
 
 	// Detail - Detail from one product
 	detail: (req, res) => {
+		const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+		const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+
 		const { id } = req.params;
 		const product = products.find(
 			product => product.id === +id
 		);
-
+			//return console.log(product);
 		return res.render('detail', {
 			title: product.name,
 			...product,
@@ -45,28 +51,69 @@ const controller = {
 			discount:+discount,
 			category,
 			description:description.trim(),
-			image:null
+			image: req.file? req.file.filename : null
 		};
-
+		//return console.log(req.file);
 		products.push(newProduct);
 
 		fs.writeFileSync(productsFilePath,JSON.stringify(products, null, 3),'utf-8')
 
-		return res.redirect('/');
+		return res.redirect('/products/');
 	},
 
 	// Update - Form to edit
 	edit: (req, res) => {
 		// Do the magic
+		
+		const {id} = req.params;
+		const productToEdit=products.find(product=>product.id===+id
+						
+			//res.send(product)
+
+			//return productToEdit=product
+		)
+		//console.log(productToEdit)
+		res.render('product-edit-form', productToEdit);
+
 	},
 	// Update - Method to update
 	update: (req, res) => {
 		// Do the magic
+		//res.send(req.body)
+		const {name,price,discount,category,description}=req.body;
+		const id=req.params.id
+		const productToEdit=products.find(product=>product.id===+id)
+		const productEdited={
+			id: +id,
+  			name: name.trim(),
+  			price: +price,
+  			discount: +discount,
+  			category: category,
+  			description: description,
+  			image: productToEdit.image
+		}
+		
+
+		const productsModified=products.map(product=>{ if (product.id===+id){
+			return productEdited
+		}
+			return product
+		})
+		//return console.log(productsModified);
+		fs.writeFileSync(productsFilePath,JSON.stringify(productsModified, null, 3),'utf-8')
+		res.redirect('/products/')
 	},
 
 	// Delete - Delete one product from DB
 	destroy: (req, res) => {
 		// Do the magic
+		const {id} = req.params;
+		const productsModified=products.filter(product=> product.id!==+id)
+
+		//res.send(productsModified)
+
+		fs.writeFileSync(productsFilePath,JSON.stringify(productsModified, null, 3),'utf-8')
+		res.redirect('/products/')
 	}
 };
 

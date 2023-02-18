@@ -4,13 +4,14 @@ const router = express.Router();
 
 // ************ Controller Require ************
 const productsController = require('../controllers/productsController');
+const { uploadProductsImage } = require('../middleware/upload');
 
 /*** GET ALL PRODUCTS ***/ 
 router.get('/', productsController.index); 
 
 /*** CREATE ONE PRODUCT ***/ 
 router.get('/create', productsController.create); 
-router.post('/create', productsController.store); 
+router.post('/create', uploadProductsImage.single('image'),productsController.store); 
 
 
 /*** GET ONE PRODUCT ***/ 

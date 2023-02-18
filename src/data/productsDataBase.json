@@ -145,20 +145,38 @@
    },
    {
       "id": 17,
-      "name": "asdasd",
-      "price": 123,
-      "discount": 12,
+      "name": "Mochilas Escolares Urbanas Mujer Hombre Deportiva Reforzada",
+      "price": 12000,
+      "discount": 10,
       "category": "visited",
-      "description": "dsdsfdsfdsf",
-      "image": null
+      "description": "Mochila Bagcherry Urbana\r\n-MEDIDAS : 40 CM ALTO 25 CM ANCHO 12 CM PROFUNDIDAD\r\n\r\n. Confeccionado en tela poliéster\r\n. Compartimento amplio con porta notebook\r\n. Segundo compartimento amplio\r\n. Bolsillo Frontal\r\n. Espaldar Acolchado\r\n. Tiras Ajustables Air Mesh\r\n. Bolsillos laterales de Red porta Botellas\r\n. Interior Forrado\r\n. Logo frontal bordado",
+      "image": "1676695159663_products_.webp"
    },
    {
       "id": 18,
-      "name": "saasdfasd",
-      "price": 3453543,
-      "discount": 12,
+      "name": "Waflera Sandwichera Parrilla Black + Decker Wm2000s-ar 3en1",
+      "price": 16000,
+      "discount": 0,
       "category": "visited",
-      "description": "gndfsfd",
-      "image": null
+      "description": "Waflera Sandwichera Parrilla 3en1 Black + Decker Wm2000s-ar\r\nModelo: WM2000S-AR\r\n\r\nCaracterísticas:\r\nEl desayuno es la comida más importante, nos da las energías para comenzar el día ¡y puede ser aún mejor con la estación de desayuno 3 en 1 de BLACK+DECKER™! Sus placas intercambiables te permitirán hacer deliciosos waffles, sándwiches y asar lo que tu desess. Además, la limpieza es muy fácil y rápida ya que tienen recubrimiento antiadherente.",
+      "image": "1676695372788_products_.webp"
+   },
+   {
+      "id": 19,
+      "name": "Maquina Para Hacer Sushi Maquina Para Rolls Fácil Y Rápido",
+      "price": 1500,
+      "discount": 0,
+      "category": "",
+      "description": "Maquina para hacer sushi Rolls fácil y rápido\r\nSushi Machine\r\nMuy sencillo de usar, de lavar y de guardar.\r\nIdeal para usar en casa, para restaurantes o para hacer el mejor regalo a un fan del sushi.\r\nEs exactamente el mismo que el que se compra en lugares prestigiosos\r\n-Medida: 6cm de diámetro x 29,5cm de largo\r\nColor: Blanco\r\nMarca: Facilia",
+      "image": "1676695491777_products_.webp"
+   },
+   {
+      "id": 20,
+      "name": "Multiprocesadora Black+Decker FP1002J-AR 750W blanca 220V - 240V",
+      "price": 30000,
+      "discount": 0,
+      "category": "visited",
+      "description": "A la hora de elaborar tus platos favoritos, todas tus necesidades estarán cubiertas fácilmente con esta multiprocesadora Black+Decker. Descubrí una nueva forma de cocinar y sorprendé a tu familia con las preparaciones más ricas. Este electrodoméstico logrará transformar los alimentos en el menor tiempo y se convertirá en tu ayudante imprescindible en la cocina.\r\n\r\nComo un chef profesional\r\n¡Abrí el libro de recetas y poné manos a la obra! Lograrás tener resueltos tus almuerzos y cenas en pocos pasos y sin limitaciones. Usala para preparar licuados bien frescos, perfectos para esas tardes calurosas de verano. Prepará diversas salsas dulces o saladas y dale el toque final a todas tus creaciones. Amasá la mezcla de tus galletitas o panes caseros y viví la aventura de tener una panadería en casa.\r\n\r\nTodo en uno\r\nPor otro lado, se complementa con sus accesorios ya que incluye: amasador, cuchilla picadora, disco rallador rebanador, empujador, emulsionador batidor, jarra licuadora. Son fáciles de utilizar e intercambiar ya que encajan perfectamente gracias a su diseño.",
+      "image": "1676695716931_products_.webp"
    }
 ]
