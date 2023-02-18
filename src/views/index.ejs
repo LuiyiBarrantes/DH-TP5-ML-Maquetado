@@ -24,11 +24,14 @@
 					
 					 	<a href="/products/detail/<%= id %> ">
 							<figure class="product-box_image">
-								<img src="/images/products/<%= image %>" alt="imagen de producto">
+								<img src="/images/products/<%= image===null? 'default-image.png' : image %>" alt="imagen de producto">
 							</figure>
 							<article class="product-box_data">
 								<h2>$<%= toThousand(price - (price * discount) / 100) %></h2>
-								<span><%= discount %>% OFF</span>
+								<% if (discount!=0) { %>
+								 <span><%= discount %>% OFF</span>
+								<% } %>
+								
 								<p><%= name %> </p>
 								<i class="fas fa-truck"></i>
 							</article>
@@ -46,7 +49,7 @@
 	<div class="container products-wrapper">
 		<div class="row">
 			<div class="col-12">
-				<h2 class="products-title">Ofertas</h2>
+				<h2 id="sales" class="products-title">Ofertas</h2>
 			</div>
 			<!-- Show the "in-sale" products -->
 			<% inSale.forEach(({id,image,discount,name, price}) => { %>
